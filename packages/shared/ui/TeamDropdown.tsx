@@ -5,13 +5,13 @@ import {
   RectangleStackIcon,
   UserCircleIcon,
 } from '@heroicons/react/24/outline';
-import useTeams from 'hooks/useTeams';
+import useTeams from '../hooks/useTeams';
 import { useSession } from 'next-auth/react';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
-import { maxLengthPolicies } from '@/lib/common';
+import { maxLengthPolicies } from '../lib/common';
 
 const TeamDropdown = () => {
   const router = useRouter();

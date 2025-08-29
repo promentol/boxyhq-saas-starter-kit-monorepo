@@ -1,4 +1,5 @@
-import { Error, Loading } from '@/components/shared';
+import Error from '@saas/shared/ui/Error';
+import Loading from '@saas/shared/ui/Loading';
 import type { Team } from '@saas/prisma';
 import type { FormikHelpers } from 'formik';
 import useWebhook from 'hooks/useWebhook';
@@ -7,11 +8,11 @@ import { useTranslation } from 'next-i18next';
 import React from 'react';
 import toast from 'react-hot-toast';
 import type { EndpointOut } from 'svix';
-import type { WebhookFormSchema } from 'types';
-import type { ApiResponse } from 'types';
+import type { WebhookFormSchema } from '@saas/shared/types';
+import type { ApiResponse } from  '@saas/shared/types';
 
 import ModalForm from './Form';
-import { defaultHeaders } from '@/lib/common';
+import { defaultHeaders } from '@saas/shared/lib/common';
 
 const EditWebhook = ({
   visible,

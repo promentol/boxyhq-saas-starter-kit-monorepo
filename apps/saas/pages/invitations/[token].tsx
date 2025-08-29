@@ -1,14 +1,15 @@
 import Head from 'next/head';
 import { ReactElement } from 'react';
-import { NextPageWithLayout } from 'types';
+import { NextPageWithLayout } from '@saas/shared/types';
 import { useSession } from 'next-auth/react';
 import { useTranslation } from 'next-i18next';
 import { GetServerSidePropsContext } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import useInvitation from 'hooks/useInvitation';
-import { AuthLayout } from '@/components/layouts';
-import { Error, Loading } from '@/components/shared';
+import { AuthLayout } from '@saas/shared/layout';
+import Error from '@saas/shared/ui/Error';
+import Loading from '@saas/shared/ui/Loading';
 import { extractEmailDomain } from '@/lib/email/utils';
 import EmailMismatch from '@/components/invitation/EmailMismatch';
 import AcceptInvitation from '@/components/invitation/AcceptInvitation';

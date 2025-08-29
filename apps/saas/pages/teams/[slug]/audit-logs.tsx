@@ -1,11 +1,12 @@
-import { Card } from '@/components/shared';
-import { Error, Loading } from '@/components/shared';
+import Card from '@saas/shared/ui/Card';
+import Error from '@saas/shared/ui/Error';
+import Loading from '@saas/shared/ui/Loading';
 import { TeamTab } from '@/components/team';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { inferSSRProps } from '@/lib/inferSSRProps';
 import { getViewerToken } from '@/lib/retraced';
 import { getSession } from '@/lib/session';
-import useCanAccess from 'hooks/useCanAccess';
+import useCanAccess from '@saas/shared/hooks/useCanAccess';
 import useTeam from 'hooks/useTeam';
 import { getTeamMember } from 'models/team';
 import { throwIfNotAllowed } from 'models/user';
@@ -13,7 +14,7 @@ import { GetServerSidePropsContext } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import dynamic from 'next/dynamic';
-import type { NextPageWithLayout } from 'types';
+import type { NextPageWithLayout } from '@saas/shared/types';
 
 interface RetracedEventsBrowserProps {
   host: string;

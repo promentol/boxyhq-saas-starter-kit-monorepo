@@ -1,7 +1,7 @@
 import useSWR, { mutate } from 'swr';
 
-import fetcher from '@/lib/fetcher';
-import type { ApiResponse } from 'types';
+import fetcher from '@saas/shared/lib/fetcher';
+import type { ApiResponse } from '@saas/shared/types';
 import { TeamInvitation } from 'models/invitation';
 
 interface Props {

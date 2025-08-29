@@ -1,16 +1,17 @@
-import { InputWithCopyButton, InputWithLabel } from '@/components/shared';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
 import type { Team } from '@saas/prisma';
 import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
 import { Button } from 'react-daisyui';
 import { toast } from 'react-hot-toast';
 import { useSWRConfig } from 'swr';
-import type { ApiResponse } from 'types';
-import Modal from '../shared/Modal';
-import { defaultHeaders } from '@/lib/common';
+import type { ApiResponse } from '@saas/shared/types';
+import Modal from '@saas/shared/ui/Modal';
+import { defaultHeaders } from '@saas/shared/lib/common';
 import { useFormik } from 'formik';
 import { z } from 'zod';
 import { createApiKeySchema } from '@/lib/zod';
+import { InputWithCopyButton } from '@boxyhq/react-ui/shared';
 
 const NewAPIKey = ({
   team,
@@ -130,9 +131,8 @@ const DisplayAPIKey = ({ apiKey, closeModal }: DisplayAPIKeyProps) => {
       <Modal.Body>
         <InputWithCopyButton
           label={t('api-key')}
-          value={apiKey}
-          className="text-sm"
-          readOnly
+          text={apiKey}
+          classNames={{ input: 'text-sm' }}
         />
       </Modal.Body>
       <Modal.Footer>

@@ -4,11 +4,11 @@ import { useTranslation } from 'next-i18next';
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import toast from 'react-hot-toast';
 
-import fetcher from '@/lib/fetcher';
+import fetcher from '@saas/shared/lib/fetcher';
 import { Session } from '@saas/prisma';
-import { WithLoadingAndError } from '@/components/shared';
-import ConfirmationDialog from '@/components/shared/ConfirmationDialog';
-import { Table } from '@/components/shared/table/Table';
+import WithLoadingAndError from '@saas/shared/ui/WithLoadingAndError';
+import ConfirmationDialog from '@saas/shared/ui/ConfirmationDialog';
+import { Table } from '@saas/shared/ui/table/Table';
 
 type NextAuthSession = Session & { isCurrent: boolean };
 

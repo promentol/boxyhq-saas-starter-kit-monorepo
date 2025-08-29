@@ -45,3 +45,7 @@ Card.Header = Header;
 Card.Footer = Footer;
 
 export default Card;
+
+export {
+  Card
+}

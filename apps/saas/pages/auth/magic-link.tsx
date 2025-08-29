@@ -1,13 +1,13 @@
 import MagicLink from '@/components/auth/MagicLink';
-import { AuthLayout } from '@/components/layouts';
+import { AuthLayout } from '@saas/shared/layout';
 import type {
   GetServerSidePropsContext,
   InferGetServerSidePropsType,
 } from 'next';
 import { getCsrfToken } from 'next-auth/react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import type { ReactElement } from 'react';
-import type { NextPageWithLayout } from 'types';
+import type { ReactElement } from 'react';    
+import type { NextPageWithLayout } from '@saas/shared/types';
 
 type LoginProps = InferGetServerSidePropsType<typeof getServerSideProps>;
 

@@ -1,4 +1,4 @@
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { ApiError } from '@/lib/errors';
 import { prisma } from '@saas/prisma';
 import { Invitation } from '@saas/prisma';

@@ -1,5 +1,5 @@
 import React from 'react';
-import AppShell from '../shared/shell/AppShell';
+import AppShell from '../ui/shell/AppShell';
 import { SWRConfig } from 'swr';
 
 interface AccountLayoutProps {

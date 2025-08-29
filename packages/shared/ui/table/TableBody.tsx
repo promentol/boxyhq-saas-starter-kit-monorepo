@@ -1,5 +1,5 @@
 import { Button } from 'react-daisyui';
-import Badge from '@/components/shared/Badge';
+import Badge from '../Badge';
 import { useTranslation } from 'next-i18next';
 
 const trClass =

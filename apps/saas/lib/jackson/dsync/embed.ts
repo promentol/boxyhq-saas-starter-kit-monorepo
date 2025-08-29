@@ -1,6 +1,6 @@
 import type { DirectoryType } from '@boxyhq/saml-jackson';
 
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import jackson from '@/lib/jackson';
 import { ApiError } from '@/lib/errors';
 import type { JacksonDsync } from './utils';

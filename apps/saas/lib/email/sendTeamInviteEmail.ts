@@ -2,8 +2,8 @@ import { Invitation, Team } from '@saas/prisma';
 import { sendEmail } from './sendEmail';
 import { TeamInviteEmail } from '@/components/emailTemplates';
 import { render } from '@react-email/components';
-import env from '../env';
-import app from '../app';
+import env from '@saas/shared/lib/env';
+import app from '@saas/shared/lib/app';
 
 export const sendTeamInviteEmail = async (
   team: Team,

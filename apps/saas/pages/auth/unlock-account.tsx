@@ -9,9 +9,9 @@ import {
   getVerificationToken,
   isVerificationTokenExpired,
 } from 'models/verificationToken';
-import { Alert } from '@/components/shared';
-import { defaultHeaders } from '@/lib/common';
-import { AuthLayout } from '@/components/layouts';
+import Alert from '@saas/shared/ui/Alert';
+import { defaultHeaders } from '@saas/shared/lib/common';
+import { AuthLayout } from '@saas/shared/layout';
 import { unlockAccount } from '@/lib/accountLock';
 import { getUser } from 'models/user';
 

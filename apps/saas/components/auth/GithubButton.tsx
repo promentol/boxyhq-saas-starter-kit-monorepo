@@ -2,7 +2,7 @@ import { signIn } from 'next-auth/react';
 import { Button } from 'react-daisyui';
 import { useTranslation } from 'next-i18next';
 import useInvitation from 'hooks/useInvitation';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 
 const GithubButton = () => {
   const { t } = useTranslation('common');

@@ -3,7 +3,7 @@ import { Client } from '@retracedhq/retraced';
 import type { CRUD, Event } from '@retracedhq/retraced';
 import type { User } from 'next-auth';
 
-import env from './env';
+import env from '@saas/shared/lib/env';
 
 type EventType =
   | 'member.invitation.create'

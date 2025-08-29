@@ -1,4 +1,4 @@
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { throwIfNoTeamAccess } from 'models/team';
 import { throwIfNotAllowed } from 'models/user';
 import type { NextApiRequest, NextApiResponse } from 'next';

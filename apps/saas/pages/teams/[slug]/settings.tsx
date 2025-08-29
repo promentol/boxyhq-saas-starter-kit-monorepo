@@ -1,12 +1,12 @@
-import { Error, Loading } from '@/components/shared';
-import { AccessControl } from '@/components/shared/AccessControl';
+import { Error, Loading } from '@saas/shared/ui';
+import { AccessControl } from '@saas/shared/ui/AccessControl';
 import { RemoveTeam, TeamSettings, TeamTab } from '@/components/team';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import useTeam from 'hooks/useTeam';
 import type { GetServerSidePropsContext } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import type { TeamFeature } from 'types';
+import type { TeamFeature } from '@saas/shared/types';
 
 const Settings = ({ teamFeatures }: { teamFeatures: TeamFeature }) => {
   const { t } = useTranslation('common');

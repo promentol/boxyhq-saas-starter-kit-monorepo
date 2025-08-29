@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { isValidDomain, maxLengthPolicies, passwordPolicies } from '../common';
+import { isValidDomain, maxLengthPolicies, passwordPolicies } from '@saas/shared/lib/common';
 import { Role } from '@saas/prisma';
 
 export const password = z

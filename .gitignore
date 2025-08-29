@@ -67,3 +67,5 @@ yarn-error.log*
 
 # Build outputs
 dist/
+
+CLAUDE.md

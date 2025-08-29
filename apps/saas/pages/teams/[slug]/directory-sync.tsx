@@ -1,11 +1,12 @@
-import { Error, Loading } from '@/components/shared';
+import Error from '@saas/shared/ui/Error';
+import Loading from '@saas/shared/ui/Loading';
 import { TeamTab } from '@/components/team';
 import useTeam from 'hooks/useTeam';
 import { GetServerSidePropsContext } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { toast } from 'react-hot-toast';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { DirectoriesWrapper } from '@boxyhq/react-ui/dsync';
 import { BOXYHQ_UI_CSS } from '@/components/styles';
 

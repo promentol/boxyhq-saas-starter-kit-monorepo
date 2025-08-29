@@ -1,8 +1,8 @@
 import { sendEmail } from './sendEmail';
 import { render } from '@react-email/render';
 import { ResetPasswordEmail } from '@/components/emailTemplates';
-import app from '../app';
-import env from '../env';
+import app from '@saas/shared/lib/app';
+import env from '@saas/shared/lib/env';
 import { User } from '@saas/prisma';
 
 export const sendPasswordResetEmail = async (user: User, token: string) => {

@@ -1,14 +1,16 @@
-import { Error, LetterAvatar, Loading } from '@/components/shared';
-import { defaultHeaders } from '@/lib/common';
+import Error from '@saas/shared/ui/Error';
+import LetterAvatar from '@saas/shared/ui/LetterAvatar';
+import Loading from '@saas/shared/ui/Loading';
+import { defaultHeaders } from '@saas/shared/lib/common';
 import { Team } from '@saas/prisma';
 import useInvitations from 'hooks/useInvitations';
 import { useTranslation } from 'next-i18next';
 import React, { useState } from 'react';
 import toast from 'react-hot-toast';
-import type { ApiResponse } from 'types';
-import ConfirmationDialog from '../shared/ConfirmationDialog';
+import type { ApiResponse } from '@saas/shared/types';
+import ConfirmationDialog from '@saas/shared/ui/ConfirmationDialog';
 import { TeamInvitation } from 'models/invitation';
-import { Table } from '@/components/shared/table/Table';
+import { Table } from '@saas/shared/ui/table/Table';
 
 const PendingInvitations = ({ team }: { team: Team }) => {
   const [selectedInvitation, setSelectedInvitation] =

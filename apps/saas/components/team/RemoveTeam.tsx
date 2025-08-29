@@ -1,4 +1,4 @@
-import { Card } from '@/components/shared';
+import { Card } from '@saas/shared/ui/Card';
 import { Team } from '@saas/prisma';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
@@ -6,9 +6,9 @@ import React, { useState } from 'react';
 import { Button } from 'react-daisyui';
 import toast from 'react-hot-toast';
 
-import ConfirmationDialog from '../shared/ConfirmationDialog';
-import { defaultHeaders } from '@/lib/common';
-import type { ApiResponse } from 'types';
+import ConfirmationDialog from '@saas/shared/ui/ConfirmationDialog';
+import { defaultHeaders } from '@saas/shared/lib/common';
+import type { ApiResponse } from '@saas/shared/types';
 
 interface RemoveTeamProps {
   team: Team;

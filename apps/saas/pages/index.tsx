@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import { type ReactElement } from 'react';
 import { useTranslation } from 'next-i18next';
-import type { NextPageWithLayout } from 'types';
+import type { NextPageWithLayout } from '@saas/shared/types';
 import { GetServerSidePropsContext } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import FAQSection from '@/components/defaultLanding/FAQSection';
 import HeroSection from '@/components/defaultLanding/HeroSection';
 import FeatureSection from '@/components/defaultLanding/FeatureSection';
 import PricingSection from '@/components/defaultLanding/PricingSection';
-import useTheme from 'hooks/useTheme';
-import env from '@/lib/env';
+import useTheme from '@saas/shared/hooks/useTheme';
+import env from '@saas/shared/lib/env';
 import Head from 'next/head';
 
 const Home: NextPageWithLayout = () => {

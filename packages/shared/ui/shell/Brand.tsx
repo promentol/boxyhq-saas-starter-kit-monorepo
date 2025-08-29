@@ -1,6 +1,6 @@
-import app from '@/lib/app';
+import app from '../../lib/app';
 import Image from 'next/image';
-import useTheme from 'hooks/useTheme';
+import useTheme from '../../hooks/useTheme';
 
 const Brand = () => {
   const { theme } = useTheme();

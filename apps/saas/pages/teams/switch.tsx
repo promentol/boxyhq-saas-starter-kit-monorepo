@@ -1,4 +1,4 @@
-import { AuthLayout } from '@/components/layouts';
+import { AuthLayout } from '@saas/shared/layout';
 import { getSession } from '@/lib/session';
 import { deleteCookie } from 'cookies-next';
 import { getTeams } from 'models/team';
@@ -12,7 +12,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 import { type ReactElement, useEffect } from 'react';
 import toast from 'react-hot-toast';
-import type { NextPageWithLayout } from 'types';
+import type { NextPageWithLayout } from '@saas/shared/types';
 
 const Organizations: NextPageWithLayout<
   InferGetServerSidePropsType<typeof getServerSideProps>

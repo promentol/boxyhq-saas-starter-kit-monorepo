@@ -6,7 +6,7 @@ import {
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 
-import { ThemesProps, applyTheme } from '@/lib/theme';
+import { ThemesProps, applyTheme } from '../lib/theme';
 
 const useTheme = () => {
   const [theme, setTheme] = useState<string | null>(null);

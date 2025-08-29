@@ -9,7 +9,7 @@ import jackson, {
 
 export type { OIDCAuthzResponsePayload };
 
-import env from './env';
+import env from '@saas/shared/lib/env';
 
 const opts = {
   externalUrl: env.appUrl,

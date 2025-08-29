@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { ApiError } from '@/lib/errors';
 import { sendAudit } from '@/lib/retraced';
 import { throwIfNoTeamAccess } from 'models/team';

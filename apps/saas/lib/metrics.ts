@@ -1,8 +1,8 @@
 import { initializeMetrics, incrementCounter } from '@boxyhq/metrics';
 
-import type { AppEvent } from 'types';
+import type { AppEvent } from '@saas/shared/types';
 import packageInfo from '../package.json';
-import env from './env';
+import env from '@saas/shared/lib/env';
 
 initializeMetrics({ name: packageInfo.name, version: packageInfo.version });
 

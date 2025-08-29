@@ -1,18 +1,18 @@
 import { useState, useRef } from 'react';
-import { InputWithLabel } from '@/components/shared';
-import { defaultHeaders, passwordPolicies } from '@/lib/common';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
+import { defaultHeaders, passwordPolicies } from '@saas/shared/lib/common';
 import { useFormik } from 'formik';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import { Button } from 'react-daisyui';
 import toast from 'react-hot-toast';
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 import * as Yup from 'yup';
-import TogglePasswordVisibility from '../shared/TogglePasswordVisibility';
+import TogglePasswordVisibility from '@saas/shared/ui/TogglePasswordVisibility';
 import AgreeMessage from './AgreeMessage';
-import GoogleReCAPTCHA from '../shared/GoogleReCAPTCHA';
+import GoogleReCAPTCHA from '@saas/shared/ui/GoogleReCAPTCHA';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { maxLengthPolicies } from '@/lib/common';
+import { maxLengthPolicies } from '@saas/shared/lib/common';
 
 interface JoinProps {
   recaptchaSiteKey: string | null;

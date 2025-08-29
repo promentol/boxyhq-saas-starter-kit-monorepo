@@ -8,7 +8,7 @@ import {
   Tailwind,
   Text,
 } from '@react-email/components';
-import app from '@/lib/app';
+import app from '@saas/shared/lib/app';
 
 interface EmailLayoutProps {
   children: ReactNode;

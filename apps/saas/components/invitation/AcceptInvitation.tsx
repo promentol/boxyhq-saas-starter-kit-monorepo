@@ -3,8 +3,8 @@ import { Button } from 'react-daisyui';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 
-import type { ApiResponse } from 'types';
-import { defaultHeaders } from '@/lib/common';
+import type { ApiResponse } from '@saas/shared/types';
+import { defaultHeaders } from '@saas/shared/lib/common';
 import { Invitation, Team } from '@saas/prisma';
 
 interface AcceptInvitationProps {

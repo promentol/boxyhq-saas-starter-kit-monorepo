@@ -1,7 +1,7 @@
-import fetcher from '@/lib/fetcher';
+import fetcher from '@saas/shared/lib/fetcher';
 import type { EndpointOut } from 'svix';
 import useSWR, { mutate } from 'swr';
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 
 const useWebhooks = (slug: string) => {
   const url = `/api/teams/${slug}/webhooks`;

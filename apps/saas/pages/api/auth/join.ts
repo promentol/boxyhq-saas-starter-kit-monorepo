@@ -2,7 +2,7 @@ import { hashPassword } from '@/lib/auth';
 import { slugify } from '@/lib/server-common';
 import { sendVerificationEmail } from '@/lib/email/sendVerificationEmail';
 import { isEmailAllowed } from '@/lib/email/utils';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { ApiError } from '@/lib/errors';
 import { createTeam, getTeam, isTeamExists } from 'models/team';
 import { createUser, getUser } from 'models/user';

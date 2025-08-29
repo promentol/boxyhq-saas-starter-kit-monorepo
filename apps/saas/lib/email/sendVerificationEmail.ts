@@ -2,8 +2,8 @@ import type { User, VerificationToken } from '@saas/prisma';
 import { sendEmail } from './sendEmail';
 import { render } from '@react-email/components';
 import { VerificationEmail } from '@/components/emailTemplates';
-import app from '../app';
-import env from '../env';
+import app from '@saas/shared/lib/app';
+import env from '@saas/shared/lib/env';
 
 export const sendVerificationEmail = async ({
   user,

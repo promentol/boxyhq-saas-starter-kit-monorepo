@@ -1,14 +1,14 @@
-import { InputWithLabel } from '@/components/shared';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
 import type { FormikConfig } from 'formik';
 import { useFormik } from 'formik';
 import { useTranslation } from 'next-i18next';
 import React from 'react';
 import { Button } from 'react-daisyui';
-import type { WebhookFormSchema } from 'types';
+import type { WebhookFormSchema } from '@saas/shared/types';
 import * as Yup from 'yup';
-import Modal from '../shared/Modal';
+import Modal from '@saas/shared/ui/Modal';
 import { EventTypes } from '@/components/webhook';
-import { maxLengthPolicies } from '@/lib/common';
+import { maxLengthPolicies } from '@saas/shared/lib/common';
 
 interface FormProps {
   visible: boolean;

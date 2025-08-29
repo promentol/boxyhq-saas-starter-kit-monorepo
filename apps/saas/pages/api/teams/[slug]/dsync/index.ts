@@ -1,4 +1,4 @@
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { sendAudit } from '@/lib/retraced';
 import { throwIfNoTeamAccess } from 'models/team';
 import { throwIfNotAllowed } from 'models/user';

@@ -1,5 +1,5 @@
-import { WithLoadingAndError } from '@/components/shared';
-import { EmptyState } from '@/components/shared';
+import WithLoadingAndError from '@saas/shared/ui/WithLoadingAndError';
+import EmptyState from '@saas/shared/ui/EmptyState';
 import { Team } from '@saas/prisma';
 import useWebhooks from 'hooks/useWebhooks';
 import { useTranslation } from 'next-i18next';
@@ -9,10 +9,10 @@ import toast from 'react-hot-toast';
 import type { EndpointOut } from 'svix';
 
 import { CreateWebhook, EditWebhook } from '@/components/webhook';
-import { defaultHeaders } from '@/lib/common';
-import type { ApiResponse } from 'types';
-import ConfirmationDialog from '../shared/ConfirmationDialog';
-import { Table } from '@/components/shared/table/Table';
+import { defaultHeaders } from '@saas/shared/lib/common';
+import type { ApiResponse } from '@saas/shared/types';
+import ConfirmationDialog from '@saas/shared/ui/ConfirmationDialog';
+import { Table } from '@saas/shared/ui/table/Table';
 
 const Webhooks = ({ team }: { team: Team }) => {
   const { t } = useTranslation('common');

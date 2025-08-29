@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { AccountLayout } from '@/components/layouts';
+import { AccountLayout } from '@saas/shared/layout';
 import { useTranslation } from 'react-i18next';
 import { GetServerSidePropsContext } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';

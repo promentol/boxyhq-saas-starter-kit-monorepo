@@ -1,18 +1,18 @@
-import { LetterAvatar } from '@/components/shared';
-import { defaultHeaders } from '@/lib/common';
+import { LetterAvatar } from '@saas/shared/ui';
+import { defaultHeaders } from '@saas/shared/lib/common';
 import { Team } from '@saas/prisma';
-import useTeams from 'hooks/useTeams';
+import useTeams from '@saas/shared/hooks/useTeams';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Button } from 'react-daisyui';
 import toast from 'react-hot-toast';
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 import { useRouter } from 'next/router';
-import ConfirmationDialog from '../shared/ConfirmationDialog';
-import { WithLoadingAndError } from '@/components/shared';
+import ConfirmationDialog from '@saas/shared/ui/ConfirmationDialog';
+import WithLoadingAndError from '@saas/shared/ui/WithLoadingAndError';
 import { CreateTeam } from '@/components/team';
-import { Table } from '@/components/shared/table/Table';
+import { Table } from '@saas/shared/ui/table/Table';
 
 const Teams = () => {
   const router = useRouter();

@@ -3,13 +3,14 @@ import { useTranslation } from 'next-i18next';
 import { GetServerSidePropsContext } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import useTeam from 'hooks/useTeam';
-import fetcher from '@/lib/fetcher';
-import useCanAccess from 'hooks/useCanAccess';
+import fetcher from '@saas/shared/lib/fetcher';
+import useCanAccess from '@saas/shared/hooks/useCanAccess';
 import { TeamTab } from '@/components/team';
 import Help from '@/components/billing/Help';
-import { Error, Loading } from '@/components/shared';
+import Error from '@saas/shared/ui/Error';
+import Loading from '@saas/shared/ui/Loading';
 import LinkToPortal from '@/components/billing/LinkToPortal';
 import Subscriptions from '@/components/billing/Subscriptions';
 import ProductPricing from '@/components/billing/ProductPricing';

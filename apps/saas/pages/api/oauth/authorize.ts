@@ -1,4 +1,4 @@
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import jackson from '@/lib/jackson';
 import { NextApiRequest, NextApiResponse } from 'next';
 

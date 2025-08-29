@@ -1,4 +1,4 @@
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { ssoManager } from '@/lib/jackson/sso';
 import { ssoVerifySchema, validateWithSchema } from '@/lib/zod';
 import { Team } from '@saas/prisma';

@@ -1,6 +1,7 @@
-import { InputWithLabel, Loading } from '@/components/shared';
-import { maxLengthPolicies } from '@/lib/common';
-import env from '@/lib/env';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
+import Loading from '@saas/shared/ui/Loading';
+import { maxLengthPolicies } from '@saas/shared/lib/common';
+import env from '@saas/shared/lib/env';
 import { useFormik } from 'formik';
 import useInvitation from 'hooks/useInvitation';
 import { signIn, useSession } from 'next-auth/react';

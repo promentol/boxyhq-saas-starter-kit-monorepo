@@ -5,7 +5,7 @@ const { withSentryConfig } = require('@sentry/nextjs');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ['@saas/prisma'],
+  transpilePackages: ['@saas/prisma', '@saas/shared'],
   images: {
     remotePatterns: [
       {
@@ -29,6 +29,7 @@ const nextConfig = {
         source: '/.well-known/saml-configuration',
         destination: '/well-known/saml-configuration',
       },
+      
     ];
   },
   async headers() {

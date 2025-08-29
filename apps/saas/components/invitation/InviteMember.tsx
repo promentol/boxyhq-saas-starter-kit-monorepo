@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'next-i18next';
 
-import Modal from '../shared/Modal';
+import Modal from '@saas/shared/ui/Modal';
 import type { Team } from '@saas/prisma';
 import InviteViaEmail from './InviteViaEmail';
 import InviteViaLink from './InviteViaLink';

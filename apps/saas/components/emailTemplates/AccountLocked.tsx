@@ -8,7 +8,7 @@ import {
   Text,
 } from '@react-email/components';
 
-import app from '@/lib/app';
+import app from '@saas/shared/lib/app';
 import EmailLayout from './EmailLayout';
 
 interface AccountLockedProps {

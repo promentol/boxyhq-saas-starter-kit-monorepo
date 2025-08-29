@@ -1,7 +1,7 @@
-import { eventTypes } from '@/lib/common';
+import { eventTypes } from '@saas/shared/lib/common';
 import React, { ReactElement } from 'react';
-import type { WebhookFormSchema } from 'types';
-import { Checkbox } from '../shared';
+import type { WebhookFormSchema } from '@saas/shared/types';
+import Checkbox from '@saas/shared/ui/Checkbox';
 
 const EventTypes = ({
   onChange,

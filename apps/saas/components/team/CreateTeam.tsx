@@ -1,16 +1,16 @@
-import { defaultHeaders, maxLengthPolicies } from '@/lib/common';
+import { defaultHeaders, maxLengthPolicies } from '@saas/shared/lib/common';
 import type { Team } from '@saas/prisma';
 import { useFormik } from 'formik';
-import useTeams from 'hooks/useTeams';
+import useTeams from '@saas/shared/hooks/useTeams';
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { Button } from 'react-daisyui';
 import toast from 'react-hot-toast';
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 import * as Yup from 'yup';
-import Modal from '../shared/Modal';
-import { InputWithLabel } from '../shared';
+import Modal from '@saas/shared/ui/Modal';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
 
 interface CreateTeamProps {
   visible: boolean;

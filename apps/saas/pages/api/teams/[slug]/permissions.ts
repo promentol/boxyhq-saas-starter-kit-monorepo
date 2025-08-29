@@ -1,4 +1,4 @@
-import { permissions } from '@/lib/permissions';
+import { permissions } from '@saas/shared/lib/permissions';
 import { throwIfNoTeamAccess } from 'models/team';
 import type { NextApiRequest, NextApiResponse } from 'next';
 

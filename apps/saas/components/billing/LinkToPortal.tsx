@@ -4,10 +4,10 @@ import { useState } from 'react';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from 'next-i18next';
 
-import { Card } from '@/components/shared';
+import { Card } from '@saas/shared/ui/Card';
 import { Team } from '@saas/prisma';
-import { defaultHeaders } from '@/lib/common';
-import type { ApiResponse } from 'types';
+import { defaultHeaders } from '@saas/shared/lib/common';
+import type { ApiResponse } from '@saas/shared/types';
 
 interface LinkToPortalProps {
   team: Team;

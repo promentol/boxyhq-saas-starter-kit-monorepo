@@ -1,6 +1,7 @@
-import { AuthLayout } from '@/components/layouts';
-import { InputWithLabel, Loading } from '@/components/shared';
-import env from '@/lib/env';
+import { AuthLayout } from '@saas/shared/layout';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
+import Loading from '@saas/shared/ui/Loading';
+import env from '@saas/shared/lib/env';
 import { useFormik } from 'formik';
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
 import { signIn, useSession } from 'next-auth/react';
@@ -11,10 +12,10 @@ import { useRouter } from 'next/router';
 import { type ReactElement, useState } from 'react';
 import { Button } from 'react-daisyui';
 import { toast } from 'react-hot-toast';
-import type { NextPageWithLayout } from 'types';
+import type { NextPageWithLayout } from '@saas/shared/types';
 import * as Yup from 'yup';
 import Head from 'next/head';
-import { maxLengthPolicies } from '@/lib/common';
+import { maxLengthPolicies } from '@saas/shared/lib/common';
 
 const SSO: NextPageWithLayout<
   InferGetServerSidePropsType<typeof getServerSideProps>

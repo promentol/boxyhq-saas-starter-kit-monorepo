@@ -1,8 +1,8 @@
-import fetcher from '@/lib/fetcher';
+import fetcher from '@saas/shared/lib/fetcher';
 import type { Team } from '@saas/prisma';
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 
 const useTeam = (slug?: string) => {
   const { query, isReady } = useRouter();

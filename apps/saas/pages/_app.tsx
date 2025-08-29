@@ -1,19 +1,19 @@
-import app from '@/lib/app';
+import app from '@saas/shared/lib/app';
 import { SessionProvider } from 'next-auth/react';
 import { appWithTranslation } from 'next-i18next';
 import Head from 'next/head';
 import { Toaster } from 'react-hot-toast';
 import colors from 'tailwindcss/colors';
-import type { AppPropsWithLayout } from 'types';
+import type { AppPropsWithLayout } from '@saas/shared/types';
 import mixpanel from 'mixpanel-browser';
 
 import '@boxyhq/react-ui/dist/react-ui.css';
 import '../styles/globals.css';
 import { useEffect } from 'react';
-import env from '@/lib/env';
-import { Theme, applyTheme } from '@/lib/theme';
+import env from '@saas/shared/lib/env';
+import { Theme, applyTheme } from '@saas/shared/lib/theme';
 import { Themer } from '@boxyhq/react-ui/shared';
-import { AccountLayout } from '@/components/layouts';
+import { AccountLayout } from '@saas/shared/layout';
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const { session, ...props } = pageProps;

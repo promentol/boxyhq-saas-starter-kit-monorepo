@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Loading } from '@/components/shared';
+import Loading from '../Loading';
 import { useSession } from 'next-auth/react';
 import React from 'react';
 import Header from './Header';

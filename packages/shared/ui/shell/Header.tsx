@@ -8,10 +8,10 @@ import {
   UserCircleIcon,
 } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import useTheme from 'hooks/useTheme';
-import env from '@/lib/env';
+import useTheme from '../../hooks/useTheme';
+import env from '../../lib/env';
 import { useTranslation } from 'next-i18next';
-import { useCustomSignOut } from 'hooks/useCustomSignout';
+import { useCustomSignOut } from '../../hooks/useCustomSignout';
 
 interface HeaderProps {
   setSidebarOpen: React.Dispatch<React.SetStateAction<boolean>>;

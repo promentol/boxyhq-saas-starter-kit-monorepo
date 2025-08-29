@@ -3,7 +3,8 @@ import { getToken } from 'next-auth/jwt';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-import env from './lib/env';
+import env from '@saas/shared/lib/env';
+
 
 // Constants for security headers
 const SECURITY_HEADERS = {

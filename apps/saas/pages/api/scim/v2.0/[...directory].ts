@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import type { DirectorySyncRequest } from '@boxyhq/saml-jackson';
 
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import jackson from '@/lib/jackson';
 import { extractAuthToken } from '@/lib/server-common';
 import { handleEvents } from '@/lib/jackson/dsyncEvents';

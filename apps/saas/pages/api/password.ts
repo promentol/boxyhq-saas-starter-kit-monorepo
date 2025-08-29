@@ -5,7 +5,7 @@ import { ApiError } from 'next/dist/server/api-utils';
 import { recordMetric } from '@/lib/metrics';
 import { getCookie } from 'cookies-next';
 import { sessionTokenCookieName } from '@/lib/nextAuth';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { findFirstUserOrThrow, updateUser } from 'models/user';
 import { deleteManySessions } from 'models/session';
 import { validateWithSchema, updatePasswordSchema } from '@/lib/zod';

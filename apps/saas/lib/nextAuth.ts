@@ -21,7 +21,7 @@ import { addTeamMember, getTeam } from 'models/team';
 import { createUser, getUser } from 'models/user';
 import { verifyPassword } from '@/lib/auth';
 import { isEmailAllowed } from '@/lib/email/utils';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { prisma } from '@saas/prisma';
 import { isAuthProviderEnabled } from '@/lib/auth';
 import { validateRecaptcha } from '@/lib/recaptcha';
@@ -32,7 +32,7 @@ import {
   incrementLoginAttempts,
 } from '@/lib/accountLock';
 import { slackNotify } from './slack';
-import { maxLengthPolicies } from '@/lib/common';
+import { maxLengthPolicies } from '@saas/shared/lib/common';
 import { forceConsume } from '@/lib/server-common';
 
 const adapter = PrismaAdapter(prisma);

@@ -1,7 +1,8 @@
 import { PendingInvitations } from '@/components/invitation';
-import { Error, Loading } from '@/components/shared';
+import Error from '@saas/shared/ui/Error';
+import Loading from '@saas/shared/ui/Loading';
 import { Members, TeamTab } from '@/components/team';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import useTeam from 'hooks/useTeam';
 import { GetServerSidePropsContext } from 'next';
 import { useTranslation } from 'next-i18next';

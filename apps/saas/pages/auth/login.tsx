@@ -14,19 +14,21 @@ import type { ComponentStatus } from 'react-daisyui/dist/types';
 import { getCsrfToken, signIn, useSession } from 'next-auth/react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import env from '@/lib/env';
-import type { NextPageWithLayout } from 'types';
-import { AuthLayout } from '@/components/layouts';
+import env from '@saas/shared/lib/env';
+import type { NextPageWithLayout } from '@saas/shared/types';
+import { AuthLayout } from '@saas/shared/layout';
 import GithubButton from '@/components/auth/GithubButton';
 import GoogleButton from '@/components/auth/GoogleButton';
-import { Alert, InputWithLabel, Loading } from '@/components/shared';
+import Alert from '@saas/shared/ui/Alert';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
+import Loading from '@saas/shared/ui/Loading';
 import { authProviderEnabled } from '@/lib/auth';
 import Head from 'next/head';
-import TogglePasswordVisibility from '@/components/shared/TogglePasswordVisibility';
+import TogglePasswordVisibility from '@saas/shared/ui/TogglePasswordVisibility';
 import AgreeMessage from '@/components/auth/AgreeMessage';
-import GoogleReCAPTCHA from '@/components/shared/GoogleReCAPTCHA';
+import GoogleReCAPTCHA from '@saas/shared/ui/GoogleReCAPTCHA';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { maxLengthPolicies } from '@/lib/common';
+import { maxLengthPolicies } from '@saas/shared/lib/common';
 
 interface Message {
   text: string | null;

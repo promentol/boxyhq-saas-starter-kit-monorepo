@@ -3,7 +3,7 @@ import UploadAvatar from './UploadAvatar';
 import UpdateName from './UpdateName';
 import UpdateEmail from './UpdateEmail';
 import UpdateTheme from './UpdateTheme';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 
 interface UpdateAccountProps {
   user: Partial<User>;

@@ -1,5 +1,5 @@
 import Stripe from 'stripe';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { updateTeam } from 'models/team';
 
 export const stripe = new Stripe(env.stripe.secretKey ?? '');

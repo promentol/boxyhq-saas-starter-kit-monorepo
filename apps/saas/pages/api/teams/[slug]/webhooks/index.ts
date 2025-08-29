@@ -12,7 +12,7 @@ import { throwIfNotAllowed } from 'models/user';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { EndpointIn } from 'svix';
 import { recordMetric } from '@/lib/metrics';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import {
   deleteWebhookSchema,
   validateWithSchema,

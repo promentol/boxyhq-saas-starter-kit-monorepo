@@ -9,9 +9,9 @@ import {
 } from '@heroicons/react/24/outline';
 import type { Team } from '@saas/prisma';
 import classNames from 'classnames';
-import useCanAccess from 'hooks/useCanAccess';
+import useCanAccess from '@saas/shared/hooks/useCanAccess';
 import Link from 'next/link';
-import { TeamFeature } from 'types';
+import { TeamFeature } from '@saas/shared/types';
 
 interface TeamTabProps {
   activeTab: string;

@@ -1,4 +1,4 @@
-import type { NextPageWithLayout } from 'types';
+import type { NextPageWithLayout } from '@saas/shared/types';
 import type {
   GetServerSidePropsContext,
   InferGetServerSidePropsType,
@@ -8,7 +8,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getSession } from '@/lib/session';
 import { getUserBySession } from 'models/user';
 import { UpdateAccount } from '@/components/account';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 
 type AccountProps = InferGetServerSidePropsType<typeof getServerSideProps>;
 

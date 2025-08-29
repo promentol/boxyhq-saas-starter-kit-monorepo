@@ -1,5 +1,6 @@
-import { Card, InputWithLabel } from '@/components/shared';
-import { defaultHeaders } from '@/lib/common';
+import Card from '@saas/shared/ui/Card';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
+import { defaultHeaders } from '@saas/shared/lib/common';
 import { Team } from '@saas/prisma';
 import { useFormik } from 'formik';
 import { useTranslation } from 'next-i18next';
@@ -7,12 +8,12 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import { Button } from 'react-daisyui';
 import toast from 'react-hot-toast';
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 
-import { AccessControl } from '../shared/AccessControl';
+import { AccessControl } from '@saas/shared/ui/AccessControl';
 import { z } from 'zod';
 import { updateTeamSchema } from '@/lib/zod';
-import useTeams from 'hooks/useTeams';
+import useTeams from '@saas/shared/hooks/useTeams';
 
 const TeamSettings = ({ team }: { team: Team }) => {
   const router = useRouter();

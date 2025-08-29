@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import crypto from 'crypto';
 
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { ApiError } from '@/lib/errors';
 import { handleEvents } from '@/lib/jackson/dsyncEvents';
 

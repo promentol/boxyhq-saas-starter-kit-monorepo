@@ -7,15 +7,15 @@ import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
 import { type ReactElement, useEffect } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import type { NextPageWithLayout } from 'types';
+import type { NextPageWithLayout } from '@saas/shared/types';
 import { authProviderEnabled } from '@/lib/auth';
-import { AuthLayout } from '@/components/layouts';
+import { AuthLayout } from '@saas/shared/layout';
 import GithubButton from '@/components/auth/GithubButton';
 import GoogleButton from '@/components/auth/GoogleButton';
 import { JoinWithInvitation, Join } from '@/components/auth';
 import Head from 'next/head';
-import { Loading } from '@/components/shared';
-import env from '@/lib/env';
+import Loading from '@saas/shared/ui/Loading';
+import env from '@saas/shared/lib/env';
 
 const Signup: NextPageWithLayout<
   InferGetServerSidePropsType<typeof getServerSideProps>

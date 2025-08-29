@@ -2,7 +2,7 @@ import { Button } from 'react-daisyui';
 import { useTranslation } from 'next-i18next';
 
 import { Invitation } from '@saas/prisma';
-import { useCustomSignOut } from 'hooks/useCustomSignout';
+import { useCustomSignOut } from '@saas/shared/hooks/useCustomSignout';
 
 interface EmailDomainMismatchProps {
   invitation: Invitation;

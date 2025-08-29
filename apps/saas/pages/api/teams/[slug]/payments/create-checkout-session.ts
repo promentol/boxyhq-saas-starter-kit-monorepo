@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import { getSession } from '@/lib/session';
 import { throwIfNoTeamAccess } from 'models/team';
 import { stripe, getStripeCustomerId } from '@/lib/stripe';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { checkoutSessionSchema, validateWithSchema } from '@/lib/zod';
 
 export default async function handler(

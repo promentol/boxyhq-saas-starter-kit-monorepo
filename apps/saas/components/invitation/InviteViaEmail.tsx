@@ -6,9 +6,9 @@ import toast from 'react-hot-toast';
 import { Button, Input } from 'react-daisyui';
 import { useTranslation } from 'next-i18next';
 
-import type { ApiResponse } from 'types';
-import { defaultHeaders, maxLengthPolicies } from '@/lib/common';
-import { availableRoles } from '@/lib/permissions';
+import type { ApiResponse } from '@saas/shared/types';
+import { defaultHeaders, maxLengthPolicies } from '@saas/shared/lib/common';
+import { availableRoles } from '@saas/shared/lib/permissions';
 import type { Team } from '@saas/prisma';
 
 interface InviteViaEmailProps {

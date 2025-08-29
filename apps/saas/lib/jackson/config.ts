@@ -1,4 +1,4 @@
-import env from '../env';
+import env from '@saas/shared/lib/env';
 
 export const options = {
   headers: {

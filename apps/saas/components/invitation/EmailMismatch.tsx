@@ -1,6 +1,6 @@
 import { Button } from 'react-daisyui';
 import { useTranslation } from 'next-i18next';
-import { useCustomSignOut } from 'hooks/useCustomSignout';
+import { useCustomSignOut } from '@saas/shared/hooks/useCustomSignout';
 
 interface EmailMismatchProps {
   email: string;

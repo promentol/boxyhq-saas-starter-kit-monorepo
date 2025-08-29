@@ -2,7 +2,7 @@ import { getSession } from '@/lib/session';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { recordMetric } from '@/lib/metrics';
 import { ApiError } from '@/lib/errors';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { getUser, updateUser } from 'models/user';
 import { isEmailAllowed } from '@/lib/email/utils';
 import { updateAccountSchema, validateWithSchema } from '@/lib/zod';

@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import jackson from '@/lib/jackson';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 
 export default async function handler(
   req: NextApiRequest,

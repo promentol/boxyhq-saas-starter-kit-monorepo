@@ -1,9 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { getServerSession } from 'next-auth/next';
+import { getServerSession, Session } from 'next-auth/next';
 import { getAuthOptions, sessionTokenCookieName } from '@/lib/nextAuth';
 import { prisma } from '@saas/prisma';
 import { getCookie } from 'cookies-next';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { deleteSession } from 'models/session';
 
 export default async function handler(
@@ -16,7 +16,7 @@ export default async function handler(
 
   try {
     const authOptions = getAuthOptions(req, res);
-    const session = await getServerSession(req, res, authOptions);
+    const session: Session | null = await getServerSession(req, res, authOptions);
 
     if (!session || !session.user) {
       return res.status(401).json({ error: 'Unauthorized' });

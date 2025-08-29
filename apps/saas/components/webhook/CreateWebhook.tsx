@@ -4,11 +4,11 @@ import useWebhooks from 'hooks/useWebhooks';
 import { useTranslation } from 'next-i18next';
 import React from 'react';
 import toast from 'react-hot-toast';
-import type { ApiResponse } from 'types';
-import type { WebhookFormSchema } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
+import type { WebhookFormSchema } from '@saas/shared/types';
 
 import ModalForm from './Form';
-import { defaultHeaders } from '@/lib/common';
+import { defaultHeaders } from '@saas/shared/lib/common';
 
 const CreateWebhook = ({
   visible,

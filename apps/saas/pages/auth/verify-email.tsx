@@ -1,4 +1,4 @@
-import { AuthLayout } from '@/components/layouts';
+import { AuthLayout } from '@saas/shared/layout';
 import { GetServerSidePropsContext } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import type { ReactElement } from 'react';

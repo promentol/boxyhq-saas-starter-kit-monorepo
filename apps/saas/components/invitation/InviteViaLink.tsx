@@ -6,13 +6,13 @@ import React, { useState } from 'react';
 import { Button, Input } from 'react-daisyui';
 import { useTranslation } from 'next-i18next';
 
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 import useInvitations from 'hooks/useInvitations';
-import { availableRoles } from '@/lib/permissions';
+import { availableRoles } from '@saas/shared/lib/permissions';
 import type { Team } from '@saas/prisma';
-import { defaultHeaders, isValidDomain, maxLengthPolicies } from '@/lib/common';
-import { InputWithCopyButton } from '../shared';
-import ConfirmationDialog from '../shared/ConfirmationDialog';
+import { defaultHeaders, isValidDomain, maxLengthPolicies } from '@saas/shared/lib/common';
+import InputWithCopyButton from '@saas/shared/ui/InputWithCopyButton';
+import ConfirmationDialog from '@saas/shared/ui/ConfirmationDialog';
 
 interface InviteViaLinkProps {
   team: Team;

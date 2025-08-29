@@ -1,4 +1,4 @@
-import type { Action, Resource } from '@/lib/permissions';
+import type { Action, Resource } from '../lib/permissions';
 
 import usePermissions from './usePermissions';
 

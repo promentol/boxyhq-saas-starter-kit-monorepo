@@ -1,7 +1,7 @@
 import { compare, hash } from 'bcryptjs';
 
-import env from './env';
-import type { AUTH_PROVIDER } from 'types';
+import env from '@saas/shared/lib/env';
+import type { AUTH_PROVIDER } from '@saas/shared/types';
 
 export async function hashPassword(password: string) {
   return await hash(password, 12);

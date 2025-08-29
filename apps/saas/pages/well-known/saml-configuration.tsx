@@ -3,10 +3,10 @@ import Link from 'next/link';
 import React, { ReactElement, useEffect } from 'react';
 import { useTranslation, Trans } from 'next-i18next';
 import jackson from '@/lib/jackson';
-import InputWithCopyButton from '@/components/shared/InputWithCopyButton';
+import InputWithCopyButton from '@saas/shared/ui/InputWithCopyButton';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import type { NextPageWithLayout } from 'types';
-import env from '@/lib/env';
+import type { NextPageWithLayout } from '@saas/shared/types';
+import env from '@saas/shared/lib/env';
 
 const SPConfig: NextPageWithLayout<
   InferGetStaticPropsType<typeof getServerSideProps>

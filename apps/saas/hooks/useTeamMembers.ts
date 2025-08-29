@@ -1,7 +1,7 @@
-import fetcher from '@/lib/fetcher';
+import fetcher from '@saas/shared/lib/fetcher';
 import type { TeamMember, User } from '@saas/prisma';
 import useSWR, { mutate } from 'swr';
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 
 export type TeamMemberWithUser = TeamMember & { user: User };
 

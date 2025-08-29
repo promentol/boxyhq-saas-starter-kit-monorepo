@@ -1,5 +1,5 @@
-import { AuthLayout } from '@/components/layouts';
-import { LetterAvatar } from '@/components/shared';
+import { AuthLayout } from '@saas/shared/layout';
+import { LetterAvatar } from '@saas/shared/ui';
 import jackson from '@/lib/jackson';
 import { SAMLSSORecord } from '@boxyhq/saml-jackson';
 import type { GetServerSidePropsContext } from 'next';

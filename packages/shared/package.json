@@ -1,0 +1,228 @@
+{
+  "name": "@saas/shared",
+  "version": "1.0.0",
+  "description": "Shared UI components for SaaS Starter Kit",
+  "exports": {
+    ".": {
+      "import": "./ui/index.ts",
+      "require": "./ui/index.ts"
+    },
+    "./ui/AccessControl": {
+      "import": "./ui/AccessControl.tsx",
+      "require": "./ui/AccessControl.tsx"
+    },
+    "./ui/Alert": {
+      "import": "./ui/Alert.tsx",
+      "require": "./ui/Alert.tsx"
+    },
+    "./ui/Badge": {
+      "import": "./ui/Badge.tsx",
+      "require": "./ui/Badge.tsx"
+    },
+    "./ui/Card": {
+      "import": "./ui/Card.tsx",
+      "require": "./ui/Card.tsx"
+    },
+    "./ui/Checkbox": {
+      "import": "./ui/Checkbox.tsx",
+      "require": "./ui/Checkbox.tsx"
+    },
+    "./ui/ConfirmationDialog": {
+      "import": "./ui/ConfirmationDialog.tsx",
+      "require": "./ui/ConfirmationDialog.tsx"
+    },
+    "./ui/CopyToClipboardButton": {
+      "import": "./ui/CopyToClipboardButton.tsx",
+      "require": "./ui/CopyToClipboardButton.tsx"
+    },
+    "./ui/EmptyState": {
+      "import": "./ui/EmptyState.tsx",
+      "require": "./ui/EmptyState.tsx"
+    },
+    "./ui/Error": {
+      "import": "./ui/Error.tsx",
+      "require": "./ui/Error.tsx"
+    },
+    "./ui/GoogleReCAPTCHA": {
+      "import": "./ui/GoogleReCAPTCHA.tsx",
+      "require": "./ui/GoogleReCAPTCHA.tsx"
+    },
+    "./ui/InputWithCopyButton": {
+      "import": "./ui/InputWithCopyButton.tsx",
+      "require": "./ui/InputWithCopyButton.tsx"
+    },
+    "./ui/InputWithLabel": {
+      "import": "./ui/InputWithLabel.tsx",
+      "require": "./ui/InputWithLabel.tsx"
+    },
+    "./ui/LetterAvatar": {
+      "import": "./ui/LetterAvatar.tsx",
+      "require": "./ui/LetterAvatar.tsx"
+    },
+    "./ui/Loading": {
+      "import": "./ui/Loading.tsx",
+      "require": "./ui/Loading.tsx"
+    },
+    "./ui/Modal": {
+      "import": "./ui/Modal.tsx",
+      "require": "./ui/Modal.tsx"
+    },
+    "./ui/TeamDropdown": {
+      "import": "./ui/TeamDropdown.tsx",
+      "require": "./ui/TeamDropdown.tsx"
+    },
+    "./ui/TogglePasswordVisibility": {
+      "import": "./ui/TogglePasswordVisibility.tsx",
+      "require": "./ui/TogglePasswordVisibility.tsx"
+    },
+    "./ui/WithLoadingAndError": {
+      "import": "./ui/WithLoadingAndError.tsx",
+      "require": "./ui/WithLoadingAndError.tsx"
+    },
+    "./ui/shell/AppShell": {
+      "import": "./ui/shell/AppShell.tsx",
+      "require": "./ui/shell/AppShell.tsx"
+    },
+    "./ui/shell/Brand": {
+      "import": "./ui/shell/Brand.tsx",
+      "require": "./ui/shell/Brand.tsx"
+    },
+    "./ui/shell/Drawer": {
+      "import": "./ui/shell/Drawer.tsx",
+      "require": "./ui/shell/Drawer.tsx"
+    },
+    "./ui/shell/Header": {
+      "import": "./ui/shell/Header.tsx",
+      "require": "./ui/shell/Header.tsx"
+    },
+    "./ui/shell/Navigation": {
+      "import": "./ui/shell/Navigation.tsx",
+      "require": "./ui/shell/Navigation.tsx"
+    },
+    "./ui/shell/NavigationItems": {
+      "import": "./ui/shell/NavigationItems.tsx",
+      "require": "./ui/shell/NavigationItems.tsx"
+    },
+    "./ui/shell/ProductNavigation": {
+      "import": "./ui/shell/ProductNavigation.tsx",
+      "require": "./ui/shell/ProductNavigation.tsx"
+    },
+    "./ui/shell/TeamNavigation": {
+      "import": "./ui/shell/TeamNavigation.tsx",
+      "require": "./ui/shell/TeamNavigation.tsx"
+    },
+    "./ui/shell/UserNavigation": {
+      "import": "./ui/shell/UserNavigation.tsx",
+      "require": "./ui/shell/UserNavigation.tsx"
+    },
+    "./ui/table/Table": {
+      "import": "./ui/table/Table.tsx",
+      "require": "./ui/table/Table.tsx"
+    },
+    "./ui/table/TableBody": {
+      "import": "./ui/table/TableBody.tsx",
+      "require": "./ui/table/TableBody.tsx"
+    },
+    "./ui/table/TableHeader": {
+      "import": "./ui/table/TableHeader.tsx",
+      "require": "./ui/table/TableHeader.tsx"
+    },
+    "./hooks/useCanAccess": {
+      "import": "./hooks/useCanAccess.ts",
+      "require": "./hooks/useCanAccess.ts"
+    },
+    "./hooks/useCustomSignout": {
+      "import": "./hooks/useCustomSignout.ts",
+      "require": "./hooks/useCustomSignout.ts"
+    },
+    "./hooks/usePermissions": {
+      "import": "./hooks/usePermissions.ts",
+      "require": "./hooks/usePermissions.ts"
+    },
+    "./hooks/useTeams": {
+      "import": "./hooks/useTeams.ts",
+      "require": "./hooks/useTeams.ts"
+    },
+    "./hooks/useTheme": {
+      "import": "./hooks/useTheme.ts",
+      "require": "./hooks/useTheme.ts"
+    },
+    "./lib/app": {
+      "import": "./lib/app.ts",
+      "require": "./lib/app.ts"
+    },
+    "./lib/common": {
+      "import": "./lib/common.ts",
+      "require": "./lib/common.ts"
+    },
+    "./lib/env": {
+      "import": "./lib/env.ts",
+      "require": "./lib/env.ts"
+    },
+    "./lib/fetcher": {
+      "import": "./lib/fetcher.ts",
+      "require": "./lib/fetcher.ts"
+    },
+    "./lib/permissions": {
+      "import": "./lib/permissions.ts",
+      "require": "./lib/permissions.ts"
+    },
+    "./lib/theme": {
+      "import": "./lib/theme.ts",
+      "require": "./lib/theme.ts"
+    },
+    "./layout/AccountLayout": {
+      "import": "./layout/AccountLayout.tsx",
+      "require": "./layout/AccountLayout.tsx"
+    },
+    "./layout/AuthLayout": {
+      "import": "./layout/AuthLayout.tsx",
+      "require": "./layout/AuthLayout.tsx"
+    },
+    "./layout": {
+      "import": "./layout/index.ts",
+      "require": "./layout/index.ts"
+    },
+    "./types/base": {
+      "import": "./types/base.ts",
+      "require": "./types/base.ts"
+    },
+    "./types": {
+      "import": "./types/index.ts",
+      "require": "./types/index.ts"
+    },
+    "./types/next-auth.d.ts": {
+      "import": "./types/next-auth.d.ts",
+      "require": "./types/next-auth.d.ts"
+    },
+    "./types/next": {
+      "import": "./types/next.ts",
+      "require": "./types/next.ts"
+    }
+  },
+  "scripts": {
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@heroicons/react": "2.2.0",
+    "@saas/prisma": "workspace:*",
+    "@types/node": "24.0.1",
+    "classnames": "2.5.1",
+    "next-auth": "4.24.11",
+    "next-i18next": "15.4.2",
+    "react-daisyui": "^5.0.0",
+    "react-google-recaptcha": "3.1.0",
+    "react-hot-toast": "2.5.2",
+    "swr": "2.3.3"
+  },
+  "peerDependencies": {
+    "next": "^15.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

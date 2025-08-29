@@ -4,10 +4,10 @@ import { useTranslation } from 'next-i18next';
 import React, { useState, useEffect, useCallback } from 'react';
 import { ArrowUpCircleIcon } from '@heroicons/react/24/outline';
 
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 import type { User } from '@saas/prisma';
-import { Card } from '@/components/shared';
-import { defaultHeaders } from '@/lib/common';
+import { Card } from '@saas/shared/ui/Card';
+import { defaultHeaders } from '@saas/shared/lib/common';
 
 const UploadAvatar = ({ user }: { user: Partial<User> }) => {
   const { t } = useTranslation('common');

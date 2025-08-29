@@ -1,6 +1,6 @@
 import nodemailer from 'nodemailer';
 
-import env from '../env';
+import env from '@saas/shared/lib/env';
 
 const transporter = nodemailer.createTransport({
   host: env.smtp.host,

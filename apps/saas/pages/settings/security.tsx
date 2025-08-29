@@ -4,7 +4,7 @@ import type {
 } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { UpdatePassword } from '@/components/account';
 import ManageSessions from '@/components/account/ManageSessions';
 

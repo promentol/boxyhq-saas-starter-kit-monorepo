@@ -3,9 +3,9 @@ import toast from 'react-hot-toast';
 import { useTranslation } from 'next-i18next';
 import { Button, Input } from 'react-daisyui';
 
-import type { ApiResponse } from 'types';
-import { Card } from '@/components/shared';
-import { defaultHeaders } from '@/lib/common';
+import type { ApiResponse } from '@saas/shared/types';
+import { Card } from '@saas/shared/ui/Card';
+import { defaultHeaders } from '@saas/shared/lib/common';
 import type { User } from '@saas/prisma';
 import { updateAccountSchema } from '@/lib/zod';
 

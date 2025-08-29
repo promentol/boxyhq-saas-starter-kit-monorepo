@@ -1,7 +1,8 @@
-import { Error, LetterAvatar, Loading } from '@/components/shared';
+import Error from '@saas/shared/ui/Error';
+import LetterAvatar from '@saas/shared/ui/LetterAvatar';
+import Loading from '@saas/shared/ui/Loading';
 import { Team, TeamMember } from '@saas/prisma';
-import useCanAccess from 'hooks/useCanAccess';
-import useTeamMembers, { TeamMemberWithUser } from 'hooks/useTeamMembers';
+import useCanAccess from '@saas/shared/hooks/useCanAccess';
 import { useSession } from 'next-auth/react';
 import { useTranslation } from 'next-i18next';
 import { Button } from 'react-daisyui';
@@ -9,11 +10,12 @@ import toast from 'react-hot-toast';
 
 import { InviteMember } from '@/components/invitation';
 import UpdateMemberRole from './UpdateMemberRole';
-import { defaultHeaders } from '@/lib/common';
-import type { ApiResponse } from 'types';
-import ConfirmationDialog from '../shared/ConfirmationDialog';
+import { defaultHeaders } from '@saas/shared/lib/common';
+import type { ApiResponse } from '@saas/shared/types';
+import ConfirmationDialog from '@saas/shared/ui/ConfirmationDialog';
 import { useState } from 'react';
-import { Table } from '@/components/shared/table/Table';
+import { Table } from '@saas/shared/ui/table/Table';
+import useTeamMembers, { TeamMemberWithUser } from 'hooks/useTeamMembers';
 
 const Members = ({ team }: { team: Team }) => {
   const { data: session } = useSession();
@@ -69,13 +71,13 @@ const Members = ({ team }: { team: Team }) => {
 
   const canUpdateRole = (member: TeamMember) => {
     return (
-      session?.user.id != member.userId && canAccess('team_member', ['update'])
+      session?.user?.id != member.userId && canAccess('team_member', ['update'])
     );
   };
 
   const canRemoveMember = (member: TeamMember) => {
     return (
-      session?.user.id != member.userId && canAccess('team_member', ['delete'])
+      session?.user?.id != member.userId && canAccess('team_member', ['delete'])
     );
   };
 

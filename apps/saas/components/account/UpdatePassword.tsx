@@ -4,9 +4,10 @@ import { Button } from 'react-daisyui';
 import toast from 'react-hot-toast';
 import * as Yup from 'yup';
 
-import { Card, InputWithLabel } from '@/components/shared';
-import { defaultHeaders, passwordPolicies } from '@/lib/common';
-import { maxLengthPolicies } from '@/lib/common';
+import { Card } from '@saas/shared/ui/Card';
+import { defaultHeaders, passwordPolicies } from '@saas/shared/lib/common';
+import { maxLengthPolicies } from '@saas/shared/lib/common';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
 
 const schema = Yup.object().shape({
   currentPassword: Yup.string().required().max(maxLengthPolicies.password),

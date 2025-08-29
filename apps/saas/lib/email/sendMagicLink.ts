@@ -1,6 +1,6 @@
 import { sendEmail } from './sendEmail';
 import { render } from '@react-email/render';
-import app from '../app';
+import app from '@saas/shared/lib/app';
 import MagicLink from '@/components/emailTemplates/MagicLink';
 
 export const sendMagicLink = async (email: string, url: string) => {

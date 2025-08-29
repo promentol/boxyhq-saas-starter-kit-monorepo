@@ -1,7 +1,7 @@
 import { EndpointIn, Svix } from 'svix';
 
-import env from './env';
-import type { AppEvent } from 'types';
+import env from '@saas/shared/lib/env';
+import type { AppEvent } from '@saas/shared/types';
 
 const svixDisabled = !env.svix.apiKey || !env.teamFeatures.webhook;
 const svix = !svixDisabled ? new Svix(env.svix.apiKey) : null;

@@ -1,4 +1,4 @@
-import env from '../env';
+import env from '@saas/shared/lib/env';
 import blockedDomains from './freeEmailService.json';
 
 const isBusinessEmail = (email: string) => {

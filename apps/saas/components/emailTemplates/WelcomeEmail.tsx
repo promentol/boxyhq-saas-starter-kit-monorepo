@@ -7,8 +7,8 @@ import {
   Text,
 } from '@react-email/components';
 import EmailLayout from './EmailLayout';
-import app from '@/lib/app';
-import env from '@/lib/env';
+import app from '@saas/shared/lib/app';
+import env from '@saas/shared/lib/env';
 
 interface WelcomeEmailProps {
   name: string;

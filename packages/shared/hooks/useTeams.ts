@@ -1,6 +1,6 @@
-import fetcher from '@/lib/fetcher';
+import fetcher from '../lib/fetcher';
 import useSWR, { mutate } from 'swr';
-import type { ApiResponse, TeamWithMemberCount } from 'types';
+import type { ApiResponse, TeamWithMemberCount } from '../types';
 
 const useTeams = () => {
   const url = `/api/teams`;

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from 'next-i18next';
 
-import { Card } from '@/components/shared';
+import Card from '@saas/shared/ui/Card';
 
 const Help = () => {
   const { t } = useTranslation('common');

@@ -3,7 +3,7 @@ import type {
   GetConnectionsQuery,
 } from '@boxyhq/saml-jackson';
 
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { options } from '../config';
 import { ApiError } from '@/lib/errors';
 import { type JacksonSSO } from './utils';

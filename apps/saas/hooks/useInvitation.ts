@@ -1,7 +1,7 @@
 import useSWR from 'swr';
-import fetcher from '@/lib/fetcher';
+import fetcher from '@saas/shared/lib/fetcher';
 import { useRouter } from 'next/router';
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 import { Invitation, Team } from '@saas/prisma';
 
 type Response = ApiResponse<Invitation & { team: Team }>;

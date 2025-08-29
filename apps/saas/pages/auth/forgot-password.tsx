@@ -1,6 +1,6 @@
-import { AuthLayout } from '@/components/layouts';
-import { InputWithLabel } from '@/components/shared';
-import { defaultHeaders, maxLengthPolicies } from '@/lib/common';
+import { AuthLayout } from '@saas/shared/layout';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
+import { defaultHeaders, maxLengthPolicies } from '@saas/shared/lib/common';
 import { useFormik } from 'formik';
 import type {
   GetServerSidePropsContext,
@@ -13,11 +13,12 @@ import Link from 'next/link';
 import { useRef, type ReactElement, useState } from 'react';
 import { Button } from 'react-daisyui';
 import toast from 'react-hot-toast';
-import type { ApiResponse, NextPageWithLayout } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
+import type { NextPageWithLayout } from '@saas/shared/types';
 import * as Yup from 'yup';
-import GoogleReCAPTCHA from '@/components/shared/GoogleReCAPTCHA';
+import GoogleReCAPTCHA from '@saas/shared/ui/GoogleReCAPTCHA';
 import ReCAPTCHA from 'react-google-recaptcha';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 
 const ForgotPassword: NextPageWithLayout<
   InferGetServerSidePropsType<typeof getServerSideProps>

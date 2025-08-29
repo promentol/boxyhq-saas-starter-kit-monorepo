@@ -1,6 +1,7 @@
-import { AuthLayout } from '@/components/layouts';
-import { Alert, InputWithLabel } from '@/components/shared';
-import { defaultHeaders } from '@/lib/common';
+import { AuthLayout } from '@saas/shared/layout';
+import Alert from '@saas/shared/ui/Alert';
+import InputWithLabel from '@saas/shared/ui/InputWithLabel';
+import { defaultHeaders } from '@saas/shared/lib/common';
 import { useFormik } from 'formik';
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -11,7 +12,8 @@ import { Button } from 'react-daisyui';
 import type { ComponentStatus } from 'react-daisyui/dist/types';
 import { toast } from 'react-hot-toast';
 import { useTranslation } from 'next-i18next';
-import { ApiResponse, NextPageWithLayout } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
+import type { NextPageWithLayout } from '@saas/shared/types';
 import * as Yup from 'yup';
 
 const VerifyAccount: NextPageWithLayout<

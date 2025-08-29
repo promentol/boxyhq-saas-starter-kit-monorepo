@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore - Missing type definitions for react-google-recaptcha
 import ReCAPTCHA from 'react-google-recaptcha';
 
 interface Props {

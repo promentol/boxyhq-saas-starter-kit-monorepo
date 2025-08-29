@@ -1,7 +1,7 @@
 import Stripe from 'stripe';
 import { stripe } from '@/lib/stripe';
 import type { NextApiRequest, NextApiResponse } from 'next';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import type { Readable } from 'node:stream';
 import {
   createStripeSubscription,

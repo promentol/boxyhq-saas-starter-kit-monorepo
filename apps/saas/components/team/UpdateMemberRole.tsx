@@ -1,9 +1,9 @@
-import { defaultHeaders } from '@/lib/common';
-import { availableRoles } from '@/lib/permissions';
+import { defaultHeaders } from '@saas/shared/lib/common';
+import { availableRoles } from '@saas/shared/lib/permissions';
 import { Team, TeamMember } from '@saas/prisma';
 import { useTranslation } from 'next-i18next';
 import toast from 'react-hot-toast';
-import type { ApiResponse } from 'types';
+import type { ApiResponse } from '@saas/shared/types';
 
 interface UpdateMemberRoleProps {
   team: Team;

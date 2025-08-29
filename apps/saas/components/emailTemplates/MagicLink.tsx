@@ -8,7 +8,7 @@ import {
   Text,
 } from '@react-email/components';
 import EmailLayout from './EmailLayout';
-import app from '@/lib/app';
+import app from '@saas/shared/lib/app';
 
 interface MagicLinkProps {
   subject: string;

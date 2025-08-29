@@ -1,4 +1,4 @@
-import { Error, Loading } from '@/components/shared';
+import { Error, Loading } from '@saas/shared/ui';
 import { TeamTab } from '@/components/team';
 import { ConnectionsWrapper } from '@boxyhq/react-ui/sso';
 import useTeam from 'hooks/useTeam';
@@ -6,7 +6,7 @@ import { GetServerSidePropsContext } from 'next';
 import { useTranslation } from 'next-i18next';
 import toast from 'react-hot-toast';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import env from '@/lib/env';
+import env from '@saas/shared/lib/env';
 import { BOXYHQ_UI_CSS } from '@/components/styles';
 
 const TeamSSO = ({ teamFeatures, SPConfigURL }) => {

@@ -1,9 +1,10 @@
-import { Error, Loading } from '@/components/shared';
+import Error from '@saas/shared/ui/Error';
+import Loading from '@saas/shared/ui/Loading';
 import { TeamTab } from '@/components/team';
 import useTeam from 'hooks/useTeam';
 import { useTranslation } from 'next-i18next';
 import APIKeys from './APIKeys';
-import { TeamFeature } from 'types';
+import { TeamFeature } from '@saas/shared/types';
 
 const APIKeysContainer = ({ teamFeatures }: { teamFeatures: TeamFeature }) => {
   const { t } = useTranslation('common');
