@@ -1,20 +1,21 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
+node_modules
+.pnp
 .pnp.js
 yarn.lock
 
 # testing
-/coverage
+coverage
 
 # next.js
-/.next/
-/out/
+**/.next/
+**/.next/**
 
 # production
-/build
+**/.build/
+dist
 
 # misc
 .DS_Store
@@ -27,6 +28,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -41,17 +43,27 @@ yarn-error.log*
 # Sentry
 .sentryclirc
 
-.env
-
 # Tests
-/report
-/test-results/
-/playwright-report/
-/playwright/.cache/
+**/report
+**/test-results/
+**/playwright-report/
+**/playwright/.cache/
 
 # eslint
 .eslintcache
 
+# IDE
 .vscode
+.idea
+
 # Sentry Config File
 .sentryclirc
+
+# AI assistants
+.claude/
+
+# Turborepo
+.turbo
+
+# Build outputs
+dist/
