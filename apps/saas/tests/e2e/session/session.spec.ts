@@ -1,6 +1,6 @@
 import { test as base } from '@playwright/test';
 
-import { prisma } from '@/lib/prisma';
+import { prisma } from '@saas/prisma';
 import { user, team } from '../support/helper';
 import { LoginPage, SecurityPage, SettingsPage } from '../support/fixtures';
 

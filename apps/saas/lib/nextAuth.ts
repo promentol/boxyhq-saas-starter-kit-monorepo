@@ -15,14 +15,14 @@ import { setCookie, getCookie } from 'cookies-next';
 import { encode, decode } from 'next-auth/jwt';
 import { randomUUID } from 'crypto';
 
-import { Role } from '@prisma/client';
+import { Role } from '@saas/prisma';
 import { getAccount } from 'models/account';
 import { addTeamMember, getTeam } from 'models/team';
 import { createUser, getUser } from 'models/user';
 import { verifyPassword } from '@/lib/auth';
 import { isEmailAllowed } from '@/lib/email/utils';
 import env from '@/lib/env';
-import { prisma } from '@/lib/prisma';
+import { prisma } from '@saas/prisma';
 import { isAuthProviderEnabled } from '@/lib/auth';
 import { validateRecaptcha } from '@/lib/recaptcha';
 import { sendMagicLink } from '@/lib/email/sendMagicLink';

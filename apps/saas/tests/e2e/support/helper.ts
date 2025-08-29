@@ -1,4 +1,4 @@
-import { prisma } from '@/lib/prisma';
+import { prisma } from '@saas/prisma';
 
 export const user = {
   name: 'Jackson',

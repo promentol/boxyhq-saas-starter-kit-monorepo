@@ -1,5 +1,5 @@
 import fetcher from '@/lib/fetcher';
-import { ApiKey } from '@prisma/client';
+import { ApiKey } from '@saas/prisma';
 import useSWR, { mutate } from 'swr';
 import type { ApiResponse } from 'types';
 

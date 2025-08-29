@@ -14,7 +14,13 @@
     "test": "turbo test",
     "test:e2e": "turbo test:e2e",
     "test:watch": "turbo test:watch",
-    "test:cov": "turbo test:cov"
+    "test:cov": "turbo test:cov",
+    "db:generate": "pnpm --filter @saas/prisma generate",
+    "db:push": "pnpm --filter @saas/prisma db:push",
+    "db:migrate": "pnpm --filter @saas/prisma db:migrate",
+    "db:migrate:deploy": "pnpm --filter @saas/prisma db:migrate:deploy",
+    "db:seed": "pnpm --filter @saas/prisma db:seed",
+    "db:studio": "pnpm --filter @saas/prisma db:studio"
   },
   "devDependencies": {
     "turbo": "2.5.6"

@@ -1,5 +1,5 @@
 import fetcher from '@/lib/fetcher';
-import type { TeamMember, User } from '@prisma/client';
+import type { TeamMember, User } from '@saas/prisma';
 import useSWR, { mutate } from 'swr';
 import type { ApiResponse } from 'types';
 

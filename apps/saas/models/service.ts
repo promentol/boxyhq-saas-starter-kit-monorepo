@@ -1,4 +1,4 @@
-import { prisma } from '@/lib/prisma';
+import { prisma } from '@saas/prisma';
 
 export const getAllServices = async () => {
   return await prisma.service.findMany();

@@ -1,6 +1,6 @@
 import { chromium, expect, test as base } from '@playwright/test';
 
-import { prisma } from '@/lib/prisma';
+import { prisma } from '@saas/prisma';
 import { user, team } from '../support/helper';
 import { JoinPage, LoginPage, MemberPage } from '../support/fixtures';
 import { testRole } from '../support/fixtures/consts';

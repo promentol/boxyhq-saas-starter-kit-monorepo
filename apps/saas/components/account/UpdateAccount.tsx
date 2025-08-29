@@ -1,4 +1,4 @@
-import type { User } from '@prisma/client';
+import type { User } from '@saas/prisma';
 import UploadAvatar from './UploadAvatar';
 import UpdateName from './UpdateName';
 import UpdateEmail from './UpdateEmail';

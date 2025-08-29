@@ -1,4 +1,4 @@
-import { prisma } from '@/lib/prisma';
+import { prisma } from '@saas/prisma';
 import { createHash, randomBytes } from 'crypto';
 
 interface CreateApiKeyParams {

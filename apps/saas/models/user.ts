@@ -1,7 +1,7 @@
 import { ApiError } from '@/lib/errors';
 import { Action, Resource, permissions } from '@/lib/permissions';
-import { prisma } from '@/lib/prisma';
-import { Role, TeamMember } from '@prisma/client';
+import { prisma } from '@saas/prisma';
+import { Role, TeamMember } from '@saas/prisma';
 import type { Session } from 'next-auth';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getSession } from '@/lib/session';

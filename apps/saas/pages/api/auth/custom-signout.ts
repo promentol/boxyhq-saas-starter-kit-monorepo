@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { getServerSession } from 'next-auth/next';
 import { getAuthOptions, sessionTokenCookieName } from '@/lib/nextAuth';
-import { prisma } from '@/lib/prisma';
+import { prisma } from '@saas/prisma';
 import { getCookie } from 'cookies-next';
 import env from '@/lib/env';
 import { deleteSession } from 'models/session';

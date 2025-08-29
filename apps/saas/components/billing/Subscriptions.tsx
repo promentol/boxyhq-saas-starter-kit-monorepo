@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 
-import { Service, Subscription } from '@prisma/client';
+import { Service, Subscription } from '@saas/prisma';
 
 interface SubscriptionsProps {
   subscriptions: (Subscription & { product: Service })[];

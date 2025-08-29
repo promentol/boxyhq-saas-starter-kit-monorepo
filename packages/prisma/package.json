@@ -1,0 +1,27 @@
+{
+  "name": "@saas/prisma",
+  "version": "1.0.0",
+  "description": "Shared Prisma client for SaaS Starter Kit",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "build": "prisma generate && prisma db push",
+    "generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:seed": "ts-node ./prisma/seed.ts",
+    "db:studio": "prisma studio"
+  },
+  "prisma": {
+    "seed": "ts-node ./prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "6.9.0"
+  },
+  "devDependencies": {
+    "prisma": "6.9.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}

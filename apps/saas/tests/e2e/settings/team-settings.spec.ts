@@ -1,7 +1,7 @@
 import { test as base } from '@playwright/test';
 import { user, team } from '../support/helper';
 import { JoinPage, LoginPage, SettingsPage } from '../support/fixtures';
-import { prisma } from '@/lib/prisma';
+import { prisma } from '@saas/prisma';
 
 const teamNewInfo = {
   name: 'New Team Name',

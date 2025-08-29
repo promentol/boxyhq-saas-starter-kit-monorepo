@@ -1,5 +1,5 @@
 import { test as teardown } from '@playwright/test';
-import { prisma } from '@/lib/prisma';
+import { prisma } from '@saas/prisma';
 
 teardown('delete database', async () => {
   await prisma.teamMember.deleteMany();
