@@ -1,14 +1,17 @@
-import { getServerSession } from 'next-auth';
-import { headers } from 'next/headers';
-import { authOptions } from './api/auth/[...nextauth]/route';
+// import { getServerSession } from 'next-auth';
+// import { headers } from 'next/headers';
+// import { authOptions } from './api/auth/[...nextauth]/route';
 
 async function getSessionAndToken() {
-  const session = await getServerSession(authOptions);
-  const headersList = await headers();
-  const authorization = headersList.get('authorization');
-  const token = authorization?.replace('Bearer ', '') || null;
+  // const session = await getServerSession();
+  // const headersList = await headers();
+  // const authorization = headersList.get('authorization');
+  // const token = authorization?.replace('Bearer ', '') || null;
 
-  return { session, token };
+  return { 
+    session: "", 
+    token: ""
+  };
 }
 
 export default async function Home() {

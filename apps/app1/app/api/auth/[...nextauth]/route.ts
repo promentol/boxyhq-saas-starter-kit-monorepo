@@ -3,7 +3,7 @@ import { PrismaAdapter } from '@next-auth/prisma-adapter';
 import { prisma } from '@saas/prisma';
 import type { NextAuthOptions } from 'next-auth';
 
-export const authOptions: NextAuthOptions = {
+const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma),
   providers: [
     // Add providers as needed
