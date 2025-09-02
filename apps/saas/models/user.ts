@@ -7,7 +7,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { getSession } from '@/lib/session';
 import { maxLengthPolicies } from '@saas/shared/lib/common';
 
-export const normalizeUser = (user) => {
+export const normalizeUser = <T extends { name: string } | null>(user: T) => {
   if (user?.name) {
     user.name = user.name.substring(0, maxLengthPolicies.name);
   }
@@ -78,6 +78,8 @@ export const findFirstUserOrThrow = async ({ where }) => {
   const user = await prisma.user.findFirstOrThrow({
     where,
   });
+
+  user
 
   return normalizeUser(user);
 };

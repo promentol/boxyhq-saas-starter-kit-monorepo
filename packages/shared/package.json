@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Shared UI components for SaaS Starter Kit",
   "exports": {
-    ".": {
+    "./ui": {
       "import": "./ui/index.ts",
       "require": "./ui/index.ts"
     },
