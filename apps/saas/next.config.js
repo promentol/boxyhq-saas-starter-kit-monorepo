@@ -29,6 +29,14 @@ const nextConfig = {
         source: '/.well-known/saml-configuration',
         destination: '/well-known/saml-configuration',
       },
+      {
+        source: '/app1/:path*',
+        destination: 'http://localhost:4003/app1/:path*',
+      },
+      {
+        source: '/app1-static/:path*',
+        destination: 'http://localhost:4003/app1-static/:path*',
+      },
       
     ];
   },
