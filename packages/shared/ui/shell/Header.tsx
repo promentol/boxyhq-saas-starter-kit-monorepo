@@ -19,7 +19,8 @@ interface HeaderProps {
 
 const Header = ({ setSidebarOpen }: HeaderProps) => {
   const { toggleTheme } = useTheme();
-  const { status, data } = useSession();
+  const { status, data: data1 } = useSession();
+  const data = typeof data1 === 'string' ? JSON.parse(data1) : data1;
   const { t } = useTranslation('common');
   const signOut = useCustomSignOut();
 

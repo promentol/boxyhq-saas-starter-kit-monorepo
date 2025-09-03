@@ -16,7 +16,8 @@ import { maxLengthPolicies } from '../lib/common';
 const TeamDropdown = () => {
   const router = useRouter();
   const { teams } = useTeams();
-  const { data } = useSession();
+  const { data: data1 } = useSession();
+  const data = typeof data1 === 'string' ? JSON.parse(data1) : data1;
   const { t } = useTranslation('common');
 
   const currentTeam = (teams || []).find(

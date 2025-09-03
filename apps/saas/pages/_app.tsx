@@ -33,6 +33,8 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
     }
   }, []);
 
+  console.log('session', session);
+
   const getLayout =
     Component.getLayout || ((page) => <AccountLayout>{page}</AccountLayout>);
 

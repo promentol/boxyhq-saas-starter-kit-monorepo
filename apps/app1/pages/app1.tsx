@@ -1,27 +1,24 @@
-// import { getServerSession } from 'next-auth';
-// import { headers } from 'next/headers';
-// import { authOptions } from './api/auth/[...nextauth]/route';
+import type { GetServerSideProps } from 'next';
+import { getServerSession } from 'next-auth';
+import { authOptions } from '@saas/shared/lib/auth-options';
 
-async function getSessionAndToken() {
-  // const session = await getServerSession();
-  // const headersList = await headers();
-  // const authorization = headersList.get('authorization');
-  // const token = authorization?.replace('Bearer ', '') || null;
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const session = await getServerSession(context.req, context.res, authOptions);
 
-  return { 
-    session: "", 
-    token: ""
+  return {
+    props: {
+      session: JSON.stringify(session),
+      token: 'something',
+    },
   };
-}
+};
 
-export default async function Home() {
-  const { session, token } = await getSessionAndToken();
-
+export default function Home({ session, token }: { session: any; token: string }) {
   return (
     <main className="min-h-screen p-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-8">App1</h1>
-        
+
         <div className="space-y-6">
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
             <h2 className="text-2xl font-semibold mb-4">Session Information</h2>
@@ -49,3 +46,5 @@ export default async function Home() {
     </main>
   );
 }
+
+

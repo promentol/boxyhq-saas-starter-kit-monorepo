@@ -14,12 +14,21 @@ importers:
 
   apps/app1:
     dependencies:
+      '@boxyhq/react-ui':
+        specifier: 3.4.1
+        version: 3.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@heroicons/react':
+        specifier: 2.2.0
+        version: 2.2.0(react@18.3.1)
       '@next-auth/prisma-adapter':
         specifier: 1.0.7
         version: 1.0.7(@prisma/client@6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3))(next-auth@4.24.11(next@15.3.3(@babel/core@7.28.3)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(nodemailer@6.10.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@saas/prisma':
         specifier: workspace:*
         version: link:../../packages/prisma
+      '@saas/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
       '@tailwindcss/typography':
         specifier: 0.5.16
         version: 0.5.16(tailwindcss@3.4.17(ts-node@10.9.2(@types/node@24.0.1)(typescript@5.8.3)))
@@ -35,6 +44,9 @@ importers:
       next-auth:
         specifier: 4.24.11
         version: 4.24.11(next@15.3.3(@babel/core@7.28.3)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(nodemailer@6.10.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      next-i18next:
+        specifier: 15.4.2
+        version: 15.4.2(@types/react@18.3.13)(i18next@25.2.1(typescript@5.8.3))(next@15.3.3(@babel/core@7.28.3)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@15.5.3(i18next@25.2.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3))(react@18.3.1)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -161,7 +173,7 @@ importers:
         version: 4.24.11(next@15.3.3(@babel/core@7.28.3)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(nodemailer@6.10.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-i18next:
         specifier: 15.4.2
-        version: 15.4.2(@types/react@18.3.13)(i18next@25.2.1(typescript@5.8.3))(next@15.3.3(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@15.5.3(i18next@25.2.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3))(react@18.3.1)
+        version: 15.4.2(@types/react@18.3.13)(i18next@25.2.1(typescript@5.8.3))(next@15.3.3(@babel/core@7.28.3)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@15.5.3(i18next@25.2.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3))(react@18.3.1)
       nodemailer:
         specifier: 6.10.1
         version: 6.10.1
@@ -320,6 +332,9 @@ importers:
       '@heroicons/react':
         specifier: 2.2.0
         version: 2.2.0(react@18.3.1)
+      '@next-auth/prisma-adapter':
+        specifier: 1.0.7
+        version: 1.0.7(@prisma/client@6.9.0(prisma@6.9.0(typescript@5.8.3))(typescript@5.8.3))(next-auth@4.24.11(next@15.3.3(@babel/core@7.28.3)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(nodemailer@6.10.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       '@saas/prisma':
         specifier: workspace:*
         version: link:../prisma
@@ -333,11 +348,11 @@ importers:
         specifier: ^15.0.0
         version: 15.3.3(@babel/core@7.28.3)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-auth:
-        specifier: 4.24.11
+        specifier: 4.x
         version: 4.24.11(next@15.3.3(@babel/core@7.28.3)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(nodemailer@6.10.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-i18next:
         specifier: 15.4.2
-        version: 15.4.2(@types/react@18.3.13)(i18next@25.2.1(typescript@5.8.3))(next@15.3.3(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@15.5.3(i18next@25.2.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3))(react@18.3.1)
+        version: 15.4.2(@types/react@18.3.13)(i18next@25.2.1(typescript@5.8.3))(next@15.3.3(@babel/core@7.28.3)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@15.5.3(i18next@25.2.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3))(react@18.3.1)
       react:
         specifier: ^18.0.0 || ^19.0.0
         version: 18.3.1
@@ -13898,7 +13913,7 @@ snapshots:
     optionalDependencies:
       nodemailer: 6.10.1
 
-  next-i18next@15.4.2(@types/react@18.3.13)(i18next@25.2.1(typescript@5.8.3))(next@15.3.3(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@15.5.3(i18next@25.2.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3))(react@18.3.1):
+  next-i18next@15.4.2(@types/react@18.3.13)(i18next@25.2.1(typescript@5.8.3))(next@15.3.3(@babel/core@7.28.3)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-i18next@15.5.3(i18next@25.2.1(typescript@5.8.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.28.3
       '@types/hoist-non-react-statics': 3.3.7(@types/react@18.3.13)

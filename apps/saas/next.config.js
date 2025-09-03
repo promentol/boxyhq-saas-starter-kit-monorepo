@@ -33,9 +33,19 @@ const nextConfig = {
         source: '/app1/:path*',
         destination: 'http://localhost:4003/app1/:path*',
       },
+      // BasePath-scoped Next internals (image optimizer, data) from app1
       {
-        source: '/app1-static/:path*',
-        destination: 'http://localhost:4003/app1-static/:path*',
+        source: '/app1/_next/:path*',
+        destination: 'http://localhost:4003/_next/:path*',
+      },
+      {
+        source: '/teams/:teamName/products',
+        destination: 'http://localhost:4003/teams/:teamName/products',
+      },
+      // Map assetPrefix (/app1-static) to Next's internal /_next assets served by app1
+      {
+        source: '/app1-static/_next/:path*',
+        destination: 'http://localhost:4003/_next/:path*',
       },
       
     ];
