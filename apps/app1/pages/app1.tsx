@@ -1,12 +1,15 @@
 import type { GetServerSideProps } from 'next';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@saas/shared/lib/auth-options';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const session = await getServerSession(context.req, context.res, authOptions);
+  const locale = context.locale || context.defaultLocale || 'en';
 
   return {
     props: {
+      ...(await serverSideTranslations(locale, ['common'])),
       session: JSON.stringify(session),
       token: 'something',
     },
